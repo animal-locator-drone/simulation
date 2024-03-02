@@ -217,3 +217,22 @@ Sat Mar  2 09:41:12 2024
     }
 }
 ```
+
+### 4. commandto launch x11vnc on login
+```bash
+x11vnc -listen 0.0.0.0 -loop -forever -bg -rfbport 5901 -xkb -noxrecord -noxfixes -noxdamage -shared -norc
+```
+
+### 5. Systemd unit file for x11vnc on login screen
+```bash
+[Unit]
+Description=Start x11vnc at startup.
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/x11vnc -listen 0.0.0.0 -loop -forever -bg -rfbport 5900 -xkb -noxrecord -noxfixes -noxdamage -shared -norc -auth /run/user/121/gdm/Xauthority
+
+[Install]
+WantedBy=multi-user.target
+```
