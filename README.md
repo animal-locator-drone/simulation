@@ -101,6 +101,11 @@ Any scripts for documentation related to running simulations such as colosseum, 
    1. `make px4_sitl none_iris`
    2. This will take some time on first run but from now on this is how you launch PX4 SITL
       1. Consider writing a script to automatically do this conveniently
+   2. Common issue
+      1. `AttributeError: module 'em' has no attribute 'Interpreter'`
+         1.  This happened from a recent update. To fix it simply
+            1. `pip uninstall em`
+            2. `pip install empy==3.3.4`
 
 ### Install QGroundControl
 
@@ -182,6 +187,10 @@ Sat Mar  2 09:41:12 2024
    1. Can be safely ignored it seems.
 2. Warnings
    1. All warnings can likely be safely ignored they are just warnings after all.
+3. `AttributeError: module 'em' has no attribute 'Interpreter'`
+   1. This happened from a recent update. To fix it simply
+      1. `pip uninstall em`
+      2. `pip install empy==3.3.4`
 
 ### 3. Colosseum Config file example
 
