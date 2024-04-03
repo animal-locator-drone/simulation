@@ -206,7 +206,7 @@ Sat Mar  2 09:41:12 2024
             "LockStep": true,
             "UseTcp": true,
             "TcpPort": 4560,
-            "ControlPortLocal": 14540,
+            "ControlPortLocal": 14550,
             "ControlPortRemote": 14580,
             "Sensors":{
                 "Barometer":{
