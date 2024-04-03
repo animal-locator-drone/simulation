@@ -49,7 +49,9 @@ Any scripts for documentation related to running simulations such as colosseum, 
    1. It is recommended to create a symlink to this file on your desktop so its easy to launch it.
       1. `ln -s /home/myusername/Desktop/UnrealEditor /path/to/UnrealEditor`
 10. It may take some time to initialize and get ready. Be sure to fully test by creating a basic project.
-11. You're done!
+11. You will also want to disable limiting FPS in the background as it will cause airsim to lag when you switch to other windows which is often the case.
+   1. Edit >> Editor Preferences >> Performance >> Uncheck "Limit FPS In Background"
+13. You're done!
 
 ### Install ~~AirSim~~ Colosseum
 
